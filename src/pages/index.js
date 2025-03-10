@@ -27,7 +27,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => router.push('/register')}
-              className="px-6 py-2 border-2 border-green-500 text-white-500 hover:bg-gray-700 hover:text-white rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="px-6 py-2 border-2 border-green-500 text-white-500 hover:bg-transparent-700 hover:text-white rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Registro
             </button>
