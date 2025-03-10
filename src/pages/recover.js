@@ -101,7 +101,7 @@ export default function RecoverPassword() {
               {messages.recover?.remember_password}{" "}
               <a 
                 onClick={() => router.push("/auth")} 
-                className="text-green-400 hover:underline cursor-pointer"
+                className="text-blue-400 hover:underline cursor-pointer"
               >
                 {messages.auth?.login_title}
               </a>

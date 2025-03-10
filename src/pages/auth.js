@@ -141,7 +141,7 @@ export default function Auth() {
 
               {/* ✅ Link "Recuperar password" desativado se o servidor estiver offline */}
               <div className={`text-center mt-4 text-sm ${serverError || dbStatus === "offline" ? "opacity-50 pointer-events-none" : ""}`}>
-                <a onClick={() => router.push("/recover")} className="text-green-400 hover:underline cursor-pointer">
+                <a onClick={() => router.push("/recover")} className="text-blue-400 hover:underline cursor-pointer">
                   {messages.recover?.title}
                 </a>
               </div>
