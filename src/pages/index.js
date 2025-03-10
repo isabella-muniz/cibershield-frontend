@@ -67,7 +67,7 @@ export default function Home() {
 
         {/* Features Grid */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-400" style={{ borderTop: '40px solid transparent', borderBottom: '0px solid transparent' }}>
+          <h2 className="text-3xl font-bold text-center mb-12 text-green-400" style={{ borderTop: '40px solid transparent', borderBottom: '0px solid transparent' }}>
             Recursos Principais:
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -108,7 +108,7 @@ export default function Home() {
                 className="p-6 bg-gray-800 bg-opacity-50 rounded-lg border border-green-500/20 hover:border-green-500/40 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-blue-400 mb-3">
+                <h3 className="text-xl font-semibold text-green-400 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-gray-400">
