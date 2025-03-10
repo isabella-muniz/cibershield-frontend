@@ -23,8 +23,8 @@ export default function Document() {
         <meta name="application-name" content="N Login" />
 
         {/* ✅ Ícones e Manifest PWA */}
-        <link rel="icon" href="/logo.jpg" media="(prefers-color-scheme: light)" />
-        <link rel="icon" href="/logo.jpg" media="(prefers-color-scheme: dark)" /> 
+        <link rel="icon" href="/logo-br.png" media="(prefers-color-scheme: light)" />
+        <link rel="icon" href="/logo-br.png" media="(prefers-color-scheme: dark)" /> 
         {/* PWA icone para App iOS */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         {/* Configuração do PWA Android */}
