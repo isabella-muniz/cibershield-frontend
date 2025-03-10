@@ -11,7 +11,7 @@ export default function Document() {
         <meta name="keywords" content="Next.js, Tailwind, React" />
         <meta name="author" content="Projeto" />
 
-        <link rel="icon" href="/logo.jpg" />
+        <link rel="icon" href="/logo-br.png" />
       </Head>
       <body className="bg-gray-900 text-white antialiased">
         <Main />
