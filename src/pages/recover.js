@@ -90,7 +90,11 @@ export default function RecoverPassword() {
             />
             
             {/* ✅ Botão de recuperação com animação */}
-            <Button text={messages.recover?.recover_button} className="w-full transition-transform transform hover:scale-105" />
+            <Button text={messages.recover?.recover_button} className={`py-2 px-4 rounded font-bold mt-4 ${
+              blockchainStatus === "offline" || networkError
+                ? "bg-gray-600 cursor-not-allowed"
+                : "bg-gradient-to-r from-[#4AFF4A] to-[#1A8C1A] hover:opacity-90 text-white"
+            }`} />
 
             {/* ✅ Link para voltar ao login */}
             <p className="text-center text-sm mt-4">
