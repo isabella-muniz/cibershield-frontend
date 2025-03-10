@@ -99,7 +99,7 @@ export default function Auth() {
 
       {/* ✅ Estrutura da Página */}
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-green-900 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        
+
         {/* ✅ Animação de Carregamento antes de renderizar o conteúdo */}
         {isLoading && (
           <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center z-50">
@@ -117,34 +117,36 @@ export default function Auth() {
             </div>
 
             <form onSubmit={handleLogin} className="w-full">
-              <Input 
-                label={messages.auth?.email_label} 
-                type="email" 
-                name="email" 
-                value={formData.email} 
-                onChange={handleChange} 
-                ref={emailInputRef} 
+              <Input
+                label={messages.auth?.email_label}
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                ref={emailInputRef}
                 disabled={serverError || dbStatus === "offline"}
               />
-              <Input 
-                label={messages.auth?.password_label} 
-                type="password" 
-                name="password" 
-                value={formData.password} 
-                onChange={handleChange} 
+              <Input
+                label={messages.auth?.password_label}
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
                 disabled={serverError || dbStatus === "offline"}
               />
 
-              <Button text={messages.auth?.login_button} disabled={serverError || dbStatus === "offline"} />
+              <Button text={messages.auth?.login_button} disabled={serverError || dbStatus === "offline"}
+                className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:from-green-600 hover:to-green-700"
+              />
 
               {/* ✅ Link "Recuperar password" desativado se o servidor estiver offline */}
               <div className={`text-center mt-4 text-sm ${serverError || dbStatus === "offline" ? "opacity-50 pointer-events-none" : ""}`}>
                 <a onClick={() => router.push("/recover")} className="text-blue-400 hover:underline cursor-pointer">
-                {messages.recover?.title}
+                  {messages.recover?.title}
                 </a>
               </div>
             </form>
-            
+
             {/* ✅ Link "Registe-se" desativado se o servidor estiver offline */}
             <p className={`text-center text-sm mt-4 ${serverError || dbStatus === "offline" ? "opacity-50 pointer-events-none" : ""}`}>
               Ainda não tem conta?{" "}
